@@ -20,11 +20,11 @@ This is Lina Albaroudi's attempt on solving Foodics technical task for a Quality
 ## Notes to The Reviewer
 I have choosen to write the code in C# because it is what I am mostly experienced in regarding Selenium tests. 
 In Zone, my current company, all code base is written in C#, so I had to comply to the company's rules.
-However, I have also developed selenium tests using Java and Python, but not in a real project level. 
+However, I have also developed selenium tests using Java and Python, but not in a real project level.   
 
-...Sometimes the test fails in finding the "NextButton" element because of two reasons:
-1. The next **NextButton** element is not always displayed.
-//add screenshot
-2. Or because the google sign in window is overlapping with the **NextButton** element. 
-//add screenshot
-...Please rerun the test if the test fails here
+Sometimes the test fails in finding the "NextButton" element because of two reasons:
+1. The next **NextButton** element is not always displayed.   
+//add screenshot  
+2. Or because the google sign in window is overlapping with the **NextButton** element.   
+//add screenshot   
+Please rerun the test if the test fails here    
