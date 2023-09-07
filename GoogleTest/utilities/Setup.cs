@@ -98,7 +98,7 @@ namespace GoogleTest.utilities
         public void TearDown()
         {
             // Step7: Close the browser window
-            driver.Close();
+            //driver.Close();
         }
     }
 }
