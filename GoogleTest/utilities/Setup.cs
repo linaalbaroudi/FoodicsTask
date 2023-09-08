@@ -1,10 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Configuration;
 using System.Globalization;
-using System.IO;
-using System.Linq;
-using System.Threading;
+using CSharpNUnitProject.Utilities;
 using NUnit.Framework;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
@@ -80,25 +77,17 @@ namespace GoogleTest.utilities
 
         }
 
-        /*//report file
-        [OneTimeSetUp]
-        public void ReportSetup()
+        public static JsonReader GetJR()
         {
-            String workingDir = Environment.CurrentDirectory;
-            String projectDir = Directory.GetParent(workingDir).Parent.Parent.FullName;
-            var htmlReporter = new ExtentHtmlReporter(projectDir + "//index.html");
-            extent = new ExtentReports();
-            extent.AttachReporter(htmlReporter);
-            extent.AddSystemInfo("enviornment", "QA");
-            extent.AddSystemInfo("host", "localhost");
-            extent.AddSystemInfo("reporter", "lina albaroudi");
-        }*/
+            return new JsonReader();
+        }
 
         [TearDown]
         public void TearDown()
         {
             // Step7: Close the browser window
-            //driver.Close();
+            driver.Close();
+            driver.Quit();
         }
     }
 }

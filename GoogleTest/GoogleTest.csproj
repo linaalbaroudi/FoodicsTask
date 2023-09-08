@@ -22,9 +22,9 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<None Update="Test_Data\data1.json">
-			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-		</None>
+	  <None Update="utilities\Test_Data\TestData.json">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </None>
 	</ItemGroup>
 
 	<Target Name="CopyCustomContent" AfterTargets="AfterBuild">
