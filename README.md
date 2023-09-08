@@ -24,7 +24,12 @@ However, I have also developed selenium tests using Java and Python, but not in 
 
 Sometimes the test fails in finding the "NextButton" element because of two reasons:
 1. The next **NextButton** element is not always displayed.   
-//add screenshot  
 2. Or because the google sign in window is overlapping with the **NextButton** element.   
-//add screenshot   
-Please rerun the test if the test fails here    
+The test results with screenshots will be added to **FoodicsTask\GoogleTest\index.html** file
+
+## Installation steps
+1. 
+2. Open Microsoft Visual Studio
+3. Select **Clone Repository**
+4. In Repository Location Field, paste the copied link.
+5. 
