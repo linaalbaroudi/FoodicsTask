@@ -25,11 +25,22 @@ However, I have also developed selenium tests using Java and Python, but not in 
 Sometimes the test fails in finding the "NextButton" element because of two reasons:
 1. The next **NextButton** element is not always displayed.   
 2. Or because the google sign in window is overlapping with the **NextButton** element.   
-The test results with screenshots will be added to **FoodicsTask\GoogleTest\index.html** file
+
 
 ## Installation steps
-1. 
+1. Click on **Code** button and copy this repository's link
 2. Open Microsoft Visual Studio
 3. Select **Clone Repository**
-4. In Repository Location Field, paste the copied link.
-5. 
+4. In Repository Location Field, paste the copied link. Then press on **Clone** button.
+5. Run the Test
+   1. Right click on **GoogleTest** folder and click on **Run Test**
+   2. or open the terminal on the project folder and paste this command
+      **Mac or Bash**
+      
+          dotnet test GoogleTest\GoogleTest.csproj -- TestRunParameters.Parameter\(name=\"browserName\",\ value=\"Chrome\"\)
+      
+      **Windows or Powershell**
+      
+          dotnet test  GoogleTest\GoogleTest.csproj --% -- TestRunParameters.Parameter(name=\"browserName\", value=\"Chrome\")
+
+6. The test results with screenshots will be added to **FoodicsTask\GoogleTest\index.html** file
