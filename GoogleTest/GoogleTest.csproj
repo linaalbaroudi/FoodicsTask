@@ -11,6 +11,7 @@
 		<PackageReference Include="DotNetSeleniumExtras.PageObjects" Version="3.11.0" />
 		<PackageReference Include="DotNetSeleniumExtras.PageObjects.Core" Version="4.3.0" />
 		<PackageReference Include="DotNetSeleniumExtras.WaitHelpers" Version="3.11.0" />
+		<PackageReference Include="ExtentReports" Version="5.0.0" />
 		<PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.11.0" />
 		<PackageReference Include="NUnit" Version="3.13.2" />
 		<PackageReference Include="NUnit3TestAdapter" Version="4.0.0" />
@@ -22,7 +23,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <None Update="utilities\Test_Data\TestData.json">
+	  <None Update="Utilities\Test_Data\TestData.json">
 	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 	  </None>
 	</ItemGroup>

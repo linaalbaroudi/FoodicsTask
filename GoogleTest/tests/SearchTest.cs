@@ -11,6 +11,7 @@ namespace GoogleTest.tests
 
         [Test]
         [TestCaseSource("TestDataConfig")]
+        [Parallelizable(ParallelScope.All)]
         public void searchTest(String keyWord1, String keyWord2)
         {
             // Step1: Open website and search for any keyword
@@ -21,7 +22,7 @@ namespace GoogleTest.tests
             searchPage.search(keyWord2);
 
             // Step4: Scroll down and go to the next page
-            searchPage = searchPage.nextPage(jsExecutor);
+            searchPage = searchPage.nextPage(jsExecutor!);
 
             // Step5: Validate if the number of results on page 2 is equal to page 3 or not
             int resultsCountPage2 = searchPage.SearchResults.Count;
@@ -34,7 +35,7 @@ namespace GoogleTest.tests
             TestContext.WriteLine($"\nSearch results in Page2 and Page3 are {printConditional(resultsCountPage2 == resultsCountPage3)}equal\n");
 
             // Step6: Validate there are different search suggestions displayed at the end of the page
-            TestContext.WriteLine($"\nOther search suggestions are {printConditional(searchPage.isSuggestionDisplayed(jsExecutor) )}displayed at the end of the page\n");
+            TestContext.WriteLine($"\nOther search suggestions are {printConditional(searchPage.isSuggestionDisplayed(jsExecutor!) )}displayed at the end of the page\n");
 
         }
 
